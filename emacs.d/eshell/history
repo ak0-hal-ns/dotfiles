@@ -1,0 +1,128 @@
+man 1 ls
+util/include_path.sh 
+util/include_path.sh errno.h
+util/include_path.sh asm errno.h
+util/include_path.sh errno.h
+util/include_path.sh bits errno.h
+util/include_path.sh linux errno.h
+util/include_path.sh asm errno.h
+util/include_path.sh asm-generic errno.h
+util/include_path.sh asm-generic errno-base.h
+ls util
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+python util/list_errno.py 
+tree
+rm lib/ename.c.inc 
+python util/list_errno.py 
+python util/list_errno.py 
+cd lib
+ls
+ls -l
+ls
+gcc -o liberr.a -c error_functions.c
+mv err_names.c err_names.c.inc
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+apropos fflush
+man 3 fflush
+apropos stdout
+man 3 stdout
+apropos fprintf
+man 3 fprintf
+man 3 fprintf
+apropos fputs
+man 3 fputs
+man 2 _exit
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+ls
+mkdir ref
+mv ref_* ref/
+ls
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -c error_functions.c
+gcc -o liberr.a -std=c11 -pedantic-errors -Wall -Werror -c error_functions.c
+gcc -o liberr.a -std=c11 -pedantic-errors -Wall -Werror -c error_functions.c
+gcc -o liberr.a -std=c11 -pedantic-errors -Wall -Werror -c error_functions.c
+git status
+git add ./error_functions.c
+git add ./error_functions.h
+git status
+git add ./err_names.c.inc
+git status
+git reset HEAD err_names.c.inc 
+git status
+git commit -m "Add library code for error handling"
+git add ../util/include_path.sh 
+git commit -m "Add utility script for searching header files"
+git status
+git add err_names.c.inc 
+git add ../util/list_errno.py 
+git commit -m "Add utility script for converting errno into err-name"
+git push
+git status
+git log -5
+git push
+git status
+git status
+git add ../../.gitignore
+git commit -m "Add *.a file into the ignore file"
+git status
+apropos getenv
+man 3 getenv
+man 3 errno
+man 3 perror
+man 3 strerror
+man 3 err
+man 3 error
+apropos atoi
+apropos atol
+aporopos strtol
+apropos strtol
+man 3 atoi
+man 3 strtol
+ls
+cd ..
+ls
+tree
+cd util/
+ls
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+gcc -o bin/demo_strtol -std=c11 -pedantic-errors -Wall -Werror demo_strtol.c 
+bin/demo_strtol 
+man 3 basename

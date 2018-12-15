@@ -1,0 +1,75 @@
+Dired
+  ;; open
+    C-x d              (dired)
+    C-x 4 d            (dired-other-window)
+    C-x 5 d            (dired-other-frame)
+    C-x C-q            (dired-toggle-read-only)  ; toggle to Wdired
+    '('                (dired-hide-details-mode)  ; toggle detail
+  ;; visit
+    f                  (dired-find-file)  ; 'e' and '<RET>' is same
+    v                  (dired-view-file)
+    o                  (dired-find-file-other-window)
+    C-o                (dired-display-file)  ; like 'o' but do not select
+  ;; move
+    ^                  (dired-up-directory)
+    i                  (dired-maybe-insert-subdir)  ; on a directory line
+    C-u k              remove subdirectory listing on a subdirectory header
+    $                  (dired-hide-subdir)  ; toggle
+    M-$                (dired-hide-all)     ; toggle for all subdirectories
+    k                  (dired-do-kill-lines)  ; just line not file itself
+    g                  (revert-buffer)
+    l                  (dired-do-redisplay)  ; specified files
+    s                  (dired-sort-toggle-or-edit)
+  ;; add
+    +                  (dired-create-directory)
+  ;; delete
+    d                  (dired-flag-file-deletion)
+    x                  (dired-do-flagged-delete)
+    #                  ; flag all auto-save files for deletion
+    ~                  ; flag all backup files for deletion
+  ;; unmark
+    u                  (dired-unmark)
+    <DEL>              (dired-unmark-backward)
+  ;; mark
+    m                  (dired-mark)
+  ;; operate
+    C NEW <RET>        (dired-do-copy)    ; like shell command 'cp'
+    D                  (dired-do-delete)  ; like shell command 'rm'
+    R NEW <RET>        (dired-do-rename)  ; like shell command 'mv'
+    =                  (dired-diff)
+  ;; shell
+    !                  (dired-do-shell-command)
+    X                  (dired-do-shell-command)
+    &                  (dired-do-async-shell-command)
+  ;; search
+    j                  (dired-goto-file)
+    M-s f C-s          (dired-isearch-filenames)
+    M-s f M-C-s        (dired-isearch-filenames-regexp)
+    M-x find-name-dired  ; read args DIRECTORY and PATTERN (search file)
+    M-x find-grep-dired  ; read args DIRECTORY and REGEXP (search content)
+  ;; other
+    w                  (dired-copy-filename-as-kill)
+    W                  (browse-url-of-dired-file)
+
+Xref
+  ;;;; before using etags, create tags table.  for example
+  ;;;; $ find some-directory/ -type f \
+  ;;;;   -name "*.[chCH]" -or -name "*.py" | etags -
+
+  ;; operate
+    M-.                (xref-find-definitions)
+    C-M-.	       (xref-find-apropos)
+    C-x 4 . <RET>      (xref-find-definitions-other-window)
+    C-x 5 . <RET>      (xref-find-definitions-other-frame)
+    M-,                (xref-pop-marker-stack)
+    M-?                ; find all references
+    M-x xref-etags-mode    ; switch 'xref' to use the 'etags' backend
+  ;; in *xref* buffer
+    <RET>              ; display the reference on the current line
+    q	               (xref-quit)
+    n	               (xref-next-line)
+    .	     	       (xref-next-line)
+    p	    	       (xref-prev-line)
+    ,	     	       (xref-prev-line)
+    C-o	     	       (xref-show-location-at-point)
+    <TAB>    	       (xref-quit-and-goto-xref)
